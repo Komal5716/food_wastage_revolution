@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FOOD WASTAGE REVOLUTION</title>
+
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/homepage.css">
+        <script src="./js/angular.min.js"></script>
+        <script src="./js/app.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+                crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;0,900;1,900&display=swap"
+                rel="stylesheet">
+</head>
+<body ng-app="login" ng-controller="controller">
+        <div class="card-header sticky-top" style="background-color:rgb(246, 112, 64)">
+                <div class="d-flex flex-column flex-md-row ">
+                        <!-- align-items-center -->
+                        <nav class=" d-inline-flex mt-2 mt-md-0 ">
+                                <svg xmlns=" http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                                        class="bi bi-justify" viewBox="0 0 16 16" class="navbar-toggler" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                                        aria-controls="offcanvasNavbar">
+                                        <path fill-rule="evenodd"
+                                                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                                <b style="margin-left: 20px; color: white;font-size: medium;" ng-click="homepage()">Food Wastage Revolution</b>
+                        </nav>
+
+                        <nav class="navbar">
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                                        aria-labelledby="offcanvasNavbarLabel">
+                                        <div class="offcanvas-header">
+                                                <h5  class="offcanvas-title" id="offcanvasNavbarLabel" >
+                                                        Food Wastage Revolution
+                                                </h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div  class="offcanvas-body">
+                                                <form class="d-flex">
+                                                        <input class="form-control me-2" type="search"
+                                                                placeholder="Search" aria-label="Search">
+                                                        <button class="btn btn-outline-success"
+                                                                type="submit">Search</button>
+                                                </form>
+                                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 border-radius" >
+                                                        <li class="nav-item">
+                                                                <a class="nav-link active" aria-current="page"
+                                                                        ng-click="btn1()" data-bs-toggle="modal"
+                                                                        data-bs-target="#staticBackdrop"  href="#" ><img src="../DE/img/1.jpg" alt="" height="35">Donate
+                                                                        food</img></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link active" aria-current="page" href="#" ng-click="btn2()"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#staticBackdrop2"><img src="../DE/img/2.jpg" alt="" height="35" >
+                                                                        </img>Request
+                                                                        food</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link" 
+                                                                         href="li.html"> <img src="" height="20" width="25"> Donate/Request foods
+                                                                        list</a>
+                                                        </li>
+                                                        
+                                                        <li class="nav-item dropdown">
+                                                                <a class="nav-link dropdown-toggle" href="#"
+                                                                        id="offcanvasNavbarDropdown" role="button"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false"><img src="../DE/img/famt.png"height="20" width="25">
+                                                                       Farmers_Contact
+                                                                </a>
+                                                                <ul class="dropdown-menu"
+                                                                        aria-labelledby="offcanvasNavbarDropdown">
+                                                                        <li><a class="dropdown-item" href="tel:+91-851-101-7210">prithvi Dubey <img src="../DE/img/c.png"  height="10" width="15"></a></li>
+                                                                        <li><a class="dropdown-item" href="tel:+91-798-432-3110">prithvi Dubey <img src="../DE/img/c.png" height="10" width="15"></a></li>
+                                                                        <li><a class="dropdown-item" href="tel:+91-814-160-3116">prithvi Dubey <img src="../DE/img/c.png" height="10" width="15"></a></li>
+                                                                        <li><a class="dropdown-item" href="tel:+91-851-101-7210">prithvi Dubey <img src="../DE/img/c.png" height="10" width="15"></a></li>
+                                                                        
+                                                                        </li>
+                                                                        <li>
+                                                                                <hr class="dropdown-divider">
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">.. </a>
+                                                                        </li>
+                                                                </ul>
+                                                        </li>
+                                                        
+                                                        <li class="nav-item">
+                                                                <a class="nav-link active" aria-current="page"
+                                                                        href="#"><img src="../DE/img/pro.png" height="20" width="25"> Sign up</a>
+                                                        </li>
+                                                        <li class="nav-item dropdown">
+                                                                <a class="nav-link dropdown-toggle" href="#"
+                                                                        id="offcanvasNavbarDropdown" role="button"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false"><img src="../DE/img/b.png"height="20" width="25">
+                                                                       Food Bank
+                                                                </a>
+                                                                <ul class="dropdown-menu"
+                                                                        aria-labelledby="offcanvasNavbarDropdown">
+                                                                        <li><a class="dropdown-item" href="">vapi</a></li>
+                                                                        <li><a class="dropdown-item" href="">DN&H</a></li>
+                                                                        </li>
+                                                                       
+                                                                        
+                                                                </ul>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                
+                                                                        <img src="" height="20" width="25"> <input type="textarea" placeholder="feedback!"> 
+                                                                        <input type="submit">
+                                                        </li>
+                                                </ul>
+
+                                        </div>
+                                </div>
+
+                        </nav>
+                </div>
+        </div>
+        <div class="show" style="display: {{show}};" >
+                <div class="container homepagebox1">
+                        <div class="card">
+                                <div class="textbox">
+                                        <main>
+                                                <header><b>
+                                                        //Demo<br>
+                                                        <b style="color:coral">  Food Donar
+                                                </b> </header>
+                                               
+                                                    
+                                               
+                                                
+                                                <ul>
+                                                        <li>Name : Komal Sahebrao Babar</li>
+                                                        <li>Address: Brahmond Complex  Dayat faliya road amli silvassa-396230. </li>
+                                                        <li>Quantity : 4 </li>
+                                                        <li>Phone Number : 7984323110</li>
+                                                        <li>Detail Discription : 7 kg  of tomato is available.</li>
+                                                        <li>Food Category : veg</li>
+                                                        <li>Need Pickup : yes </li>
+                                                        <li>Available images:-
+                                                                <img src="../DE/img/tam.png" height="30"></img>
+                                                        </li>
+                                                </ul>
+                                        </main>
+                                </div>  
+
+             
+               
+                      <center>  <p>---------------------------------------------</p></center>
+                        <div class="textbox">
+                                <main>
+                                        <header><b>
+                                                //Demo<br>
+                                                <b style="color:coral">  Requesting for food
+                                        </b> </header>
+                                       
+                                            
+                                       
+                                        
+                                        <ul>
+                                                <li>Name : Chintan Patel</li>
+                                                <li>Address: khadoli </li>
+                                                <li>Quantity : 2 </li>
+                                                <li>Phone Number : 798567890</li>
+                                                <li>Need Pickup : yes </li>
+                                                <li>Food Category : veg</li>
+                                        </ul>
+                                </main>
+                        </div>  
+
+
+        </div>
+        <center>
+                <a href="../DE/index.html" style="background-color: white; color:coral;border-color: black;"> Back to home page</a>
+        </center>   </div>
+
+</body>
+</html>
